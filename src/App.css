@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr{
+  border-color:goldenrod;
+  min-width:100%;
+  opacity: 0.2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  font-size:2.5rem;
+  color:white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 > span{
+  color:goldenrod;
+}
+
+.App{
+  gap:2rem;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color:rgb(22, 17, 61);
+  color:aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar{
+  padding: 0.5rem;
+  min-width:50vw;
+  min-height: 10vh;
+  border-radius: 10px;
+  border:2px solid goldenrod;
+  background-color: transparent;
+  color: aliceblue;
+  outline: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar:hover{
+  border:2px solid gray;
+}
+
+.card{
+  gap:1rem;
+  padding:0.5rem;
+  min-width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(50, 50, 45, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 15px;
+}
+
+.child1{
+  padding: 0 1rem;
+  min-width: 100%;
+  color: slategray;
+  display: flex;
+  border-radius: 10px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left{
+  gap:0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.temp-icon{
+  width: 40px;
+  height: 40px;
+  top: -8px;
+  position: absolute;
+}
+
+.min{
+  color:rgb(18, 112, 228);
+}
+
+.max{
+  color:rgb(255, 0, 0);
+}
+
+.min-max{
+  display: flex;
+  gap:0.5rem;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.child2{
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.categories{
+  gap:1rem;
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories>p{
+  color:goldenrod;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.categories>span{
+  font-size: 0.8rem;
 }
